@@ -77,7 +77,7 @@ function MessageBoard({
 
   const messagesEndRef = useRef(null);
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView();
+    messagesEndRef.current?.scrollIntoView("auto");
   };
 
   useEffect(() => {
